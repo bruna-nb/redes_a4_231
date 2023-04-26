@@ -19,7 +19,7 @@ while True:
         break
     client_socket.send(message.encode())
     reply = client_socket.recv(1024).decode()
-    print(f"[{count}] {reply} ::: {message}")
+    print(f"Server reply......: [{count}] {reply} ::: {message}")
     count += 1
 
 client_socket.close()

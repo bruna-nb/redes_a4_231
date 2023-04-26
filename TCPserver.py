@@ -24,4 +24,6 @@ while True:
         if not message:
             break
         print(f"Message [{client_address[0]}:{client_address[1]}]: {message}")
+        ms = "OK"
+        client_socket.send(ms.encode())
     client_socket.close()
